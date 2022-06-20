@@ -1,0 +1,29 @@
+Habilitando Two Factor Authentication no seu GitHub
+
+(⚠️ Exercícios desta aula são apenas para configurar o Git e GitHub)
+(Aula: Git & GitHub - O que é e para que serve)
+
+1 - Baixe um aplicativo TOTP
+Authy
+Microsoft Authenticator
+2 - Faça essas alterações na sua conta do Github em "Password and authentication";
+ "Two-factor authentication" e "Enable two-factor authentication";
+
+3-Escaneie o QR-code ou clique em "enter this text code" e adicione manualmente o código.
+Um código de 6 dígitos será mostrado em seu app.
+Digite o código exibido pelo seu app
+Salve os códigos de recuperação de conta
+
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
+

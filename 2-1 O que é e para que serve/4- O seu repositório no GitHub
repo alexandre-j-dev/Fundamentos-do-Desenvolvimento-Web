@@ -1,0 +1,40 @@
+O seu repositório no GitHub
+
+(⚠️ Exercícios desta aula são apenas para configurar o Git e GitHub)
+(Aula: Git & GitHub - O que é e para que serve)
+
+Crie um arquivo .txt com um nome de sua escolha (Exemplo: trybe-skills.txt) e utilizará o conteúdo abaixo.
+
+O que eu vou aprender na Trybe:
+- Unix
+- Bash
+- Git
+
+-Transforme essa pasta em um repositório Git:
+-Retorne para a raiz da pasta de exercícios;
+-Inicialize o repositório com git init;
+-Crie um arquivo de README utilizando o comando touch README.md;
+-Crie um commit inicial utilizando:
+-git add .
+-git commit -m "Initial commit"
+
+-Vá até o GitHub e crie um repositório público, para guardar todos os exercícios que desenvolverá ao longo do curso; (Repositório: Fundamentos)
+
+-Clique no botão SSH e então copie a URL do repositório;
+-Conecte o repositório local ao remoto com git remote add origin;
+-Verifique se tudo está certo com sua URL remota utilizando git remote -v.
+-Suba seu primeiro commit para o GitHub  git push;
+-Vá até o seu GitHub e verifique as novas alterações.
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
+
