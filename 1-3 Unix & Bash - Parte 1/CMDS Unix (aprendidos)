@@ -1,0 +1,151 @@
+
+COMANDOS INICIAIS
+
+touch	-criar arquivos de texto (nomearquivo.extensão) 
+mkdir 	-criar diretórios (pastas)
+pwd   	-mostra o diretório completo
+
+cp	-cria uma cópia do arquivo (cp nomearquivo + nomecopia) 
+*alguns casos são necessários adicionar a extensão do tipo de arquivo ex. jpg,png,etc.
+
+mv	-mover um arquivo de diretório (mv nomearquivo /home/usuario) *home em linux
+rm	-remover arquivo	(rm nomearquivo)
+rm -rf 	-remover definitivamente qualquer arquivo/diretório *cautela
+rmdir	-remover diretórios	(rm nomediretório) *só funciona com diretório vazio.	
+history -mostra o histórico de comandos que você executou no terminal
+echo    -exibir mensagens na tela ou colocar em um arquivo. (com > sobrepoe o escrito)
+
+head	-abrir/exibir 10 primeiros conteúdos do arquivo	
+*para menores valores utilize ex: head -5 retornará os 5 primeiros resultados.
+
+tail	-abrir/exibir 10 últimos conteúdos do arquivo
+*para menores valores utilize ex: tail -5 retornará os 5 últimos resultados.
+
+cd /  	-acessar diretório raiz 				(cd- change directory)
+cd    	-acessar diretório      				(cd- change directory)
+cd .    -acessar diretório, referencia o próprio diretório      (cd- change directory)
+cd ..   -acessar diretório, referencia o pie (acima)		(cd- change directory)
+
+
+touch	-criar arquivos de texto (nomearquivo.extensão) 
+mkdir 	-criar diretórios (pastas)
+pwd   	-mostra o diretório completo
+
+cp	-cria uma cópia do arquivo (cp nomearquivo + nomecopia) 
+*alguns casos são necessários adicionar a extensão do tipo de arquivo ex. jpg,png,etc.
+
+mv	-mover um arquivo de diretório (mv nomearquivo /home/usuario) *home em linux
+rm	-remover arquivo	(rm nomearquivo)
+rm -rf 	-remover definitivamente qualquer arquivo/diretório *cautela
+rmdir	-remover diretórios	(rm nomediretório) *só funciona com diretório vazio.	
+history -mostra o histórico de comandos que você executou no terminal
+echo    -exibir mensagens na tela ou colocar em um arquivo. (com > sobrepoe o escrito)
+
+head	-abrir/exibir 10 primeiros conteúdos do arquivo	
+*para menores valores utilize ex: head -5 retornará os 5 primeiros resultados.
+
+tail	-abrir/exibir 10 últimos conteúdos do arquivo
+*para menores valores utilize ex: tail -5 retornará os 5 últimos resultados.
+
+----------------------------------------
+
+ALTERANDO PERMISSÕES DE ARQUIVOS
+
+ls    	-lista todos arquivos do diretório atual
+ls -a 	-lista todos arquivos do diretório atual incluindo arquivos ocultos
+ls * 	-lista todos arquivos do diretório atual incluídos dos seus sub-diretórios  
+
+ls -l	-lista todos arquivos do diretório atual e informações extras como permissões, usuário, grupo, data, horas.
+ou ll
+
+chmod u	-alterar permissões dos arquivos, usuário.
+chmod g	-alterar permissões dos arquivos, grupo.
+chmod o	-alterar permissões dos arquivos, outros.
+chmod a	-alterar permissões dos arquivos, todos.
+chmod -R go-rwx nomearquivo remove a permissao da pasta e todos arquivos
+
+*o sinal - retirar alguma permissão (ex chmod u-rw nomes.txt será removida a permissão de leitura e escrita do arquivo)
+*o sinal + adicionar alguma permissão (ex chmod u+rw nomes.txt será dada a permissão de leitura e escrita do arquivo)
+
+----------------------------------------
+
+COMANDOS CAT e SORT e | (pipe) --
+cat 	-abrir/exibir conteúdo do arquivo	(concatenate)
+cat >   -criar um arquivo txt e adicionar valores
+cat >>  -adicionar valores a um arquivo txt criado
+
+*o sinal > caso haja algum conteúdo no arquivo, ele será substituído
+*o sinal >> anexa a saída padrão a um arquivo. Sendo assim, ele adiciona o que for digitado ao final do arquivo em questão.
+*o sinal < e só para output (retorna o solicitado sem alterar)
+ sort	- ordena em ordem alfabética e numérica as informações do arquivo
+ |	- recebe a informação percorre pelo pipe, e chega do outro lado com um resultado diferente (se manipulado ao percorrer o pipe)
+ 
+----------------------------------------
+ 
+COMANDO WHO e PS (PROCESSOS)
+who 	- saber qual usuário está utilizando o sistema ou quais tem acesso ao terminal
+ps 	- lista os processos sendo executados no momento
+jobs 	- é uma lista contendo a atividade atual dos processos (executados em bg, suspensos)
+sleep	- para o terminal por um tempo determinado
+& 	- adicione & para executar um processo em segundo plano e manter o terminal disponível para uso			
+bg 	- coloca um processo suspenso em background
+fg 	- coloca um processo suspenso em front (ex %1 para especificar o processo)
+kill 	- encerra um processo (ex %1 para processo 1 ou pelo PID ex: kill 45437 para forçar encerramento kill -9)
+ 	
+*aperte ctrl + z para suspender um processo
+*aperte ctrl + c para encerrar um processo (em front)
+
+----------------------------------------
+
+COMANDO CURL--
+curl 		-busca por arquivos e páginas nos servidores	(Client URL)
+curl -O 	-vai salvar o arquivo no diretório atual em funcionamento com o mesmo nome do arquivo remoto.
+curl -o		-permite especificar um nome de diferente de arquivo ou local.
+curl -C - -O     Se por alguma razão, o download for interrompido, você pode reiniciá-lo usando curl.
+
+----------------------------------------
+
+ENCONTRAR INFORMAÇÕES DENTRO DO ARQUIVO--
+
+less	-abrir/exibir conteúdo do arquivo de forma reduzida 
+*aperte espaço para listar páginas abaixo, aperte Q para sair da visualização.
+*digite / para pesquisar por informações dentro do arquivo, aperte N para próxima informação
+ex (/banana retorna todas informações banana do arquivo *case sensitive)
+
+grep (nome/informação que deseja encontrar + nome arquivo) 
+*ex: grep banana texto1.txt *case sensitive 
+grep -i (nome/informação + nome arquivo) *para ignorar case sensitive 
+grep -i 'uma banana' (para encontrar uma frase)
+grep -v (nome/informação + nome arquivo) retornará todas informações exceto a solicitada. 
+grep -n (nome/informação + nome arquivo) retorna as linhas onde estão a informação
+grep -c (nome/informação + nome arquivo) retorna o número de vezes que a informação está presente no arquivo
+*esses comandos podem ser feitos junto com outros (ex grep -iv juntei -i e -v)
+
+find . -name, -date, -size, -type (procurar arquivos, incluindo ocultos) 
+*ex find . -name 'Frutas.txt'
+----------------------------------------
+
+CONTAGEM DE CARACTERES E PALAVRAS--
+
+wc retorna o número de linhas, palavras, caracteres			(word count)
+wc -l retorna o número de linhas
+wc -w retorna o número de palavras
+wc -c retorna o número de caracteres
+
+----------------------------------------
+
+WILDCARDS (CURINGAS)--
+
+ls * 	-lista todos arquivos do diretório atual incluídos dos seus sub-diretórios  wildcards (curingas)
+ls ? 	-a interrogação substitui uma palavra faltante ex (ls ?ula01 - encontrará pasta Aula01)
+man 	-acessa o manual do comando e exibe suas alternativas ex (man ls - manual do comando ls e alternativas)
+whatis 	-explica o que os comandos fazem ex (whatis cp - copia arquivos)
+apropos -pesquisa por comandos relacionados ex copy (exibirá comandos relacionados a copy)
+
+----------------------------------------
+
+ATALHOS 
+
+ctrl + d - encerra comando no terminal
+
+----------------------------------------

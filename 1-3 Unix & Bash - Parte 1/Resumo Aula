@@ -1,0 +1,34 @@
+Unix & Bash - Parte 1
+
+Arquivos - são Diretórios, os próprios Arquivos ou Dispositivos.
+Eles são organizados em um tipo de hierarquia de raiz, o nível mais alto é o / (barra) conhecido também como root (veja print - root.png)
+
+Exemplos de hierarquias de arquivos
+/    - diretório raiz
+Boot - arquivos configuração inicialização
+Bin  - aplicativos binários
+Dev  - arquivos de dispositivos (devices)
+Etc  - scripts de inicialização
+Home - diretórios home para usuários diversos
+Proc - diretório dinâmico especial que mantém informações sobre estado do sistema, incluindo processos atualmente executados (process)
+Root - diretório home do usuário root
+SBin - binários de sistemas importantes
+Tmp  - arquivos temporários
+Usr  - (unix system resources) arquivos e aplicativos que na maiorias das vezes estão disponíveis para todos usuários
+Var  - variáveis como Logs e Banco de Dados
+
+
+(fim da aula) (inicio exercícios)
+
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
