@@ -1,0 +1,38 @@
+Introdução - Unix & Shell
+
+O Unix é um sistema operacional desenvolvido por Ken Thompsom e Denis Ritchie utilizando linguagem C, lançado em 1969 foi o primeiro a introduzir suporte a multiusuários, também é multitarefas. 
+
+Surgiram muitas variações baseados em Unix ao longo dos anos que inclusive se tornaram uns dos principais sistemas operacionais do mercado. (ex Linux, macOS)
+
+O Unix e composto de 3 níveis:
+
+1- Kernel e o cérebro do sistema operacional, responsável por fazer a interação entre o Hardware e Software.
+
+Quando o computador e ligado ele inicia a detecção do hardware, e apos o OS carregado ele passa administrar as funções dentro do sistema operacional. (memoria, processos, arquivos)
+
+2- Shell é a interface entre o OS, Usuário, e nucleo do sistema (kernel).
+Em geral, os Shells dos OS usam interface de linha de comando ou interface gráfica.
+A função do shell é, ler os comandos, interpretar e devolver o resultado.
+Existem vários tipos de shell SH, BASH, CSH, TCSH, ZSH, etc.
+
+3-Aplicativos que são programas para os usuários utilizarem ou podem ser alguns comandos no Unix.
+
+
+No desenvolvimento de software, é muito importante entender como interagir de forma eficiente com o sistema operacional no qual você vai programar. Isso te poupará tempo e permitirá ser uma pessoa mais produtiva. 
+
+Na maioria das vezes, principalmente por questões de custo, performance e facilidade de interação através do terminal, sistemas operacionais baseados em Unix são indicados como a melhor opção para se hospedar projetos Web.
+
+Sobre a linha de comando desses sistemas, podemos dizer que ela é simples, estável, eficiente e exige baixíssimo poder de hardware se comparado a operações realizadas através de interfaces gráficas. (fim da aula)
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
+
