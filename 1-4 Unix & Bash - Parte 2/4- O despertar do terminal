@@ -1,0 +1,31 @@
+O despertar do terminal
+
+(⚠️ Exercícios desta aula são apenas para treinar comandos Unix & Bash)
+(Aula: Unix & Bash - Parte 2)
+
+-Abra o terminal e execute o comando sudo apt-get install cmatrix
+-Execute o comando cmatrix. Aperte ctrl+c para voltar ao terminal;
+-Execute o comando sudo apt-get install fortune, 
+-Crie um arquivo de texto chamado fortune.txt que contenha a sua sorte do dia. Utilize apenas uma linha de comando. Use o comando fortune, e o operador >;
+-Conte quantas palavras tem a frase da sua sorte do dia. Dica: use o comando wc;
+-Execute o comando sudo apt-get install sl em um terminal Linux, execute o comando sl. Agora tente sl -F;
+-Execute o comando sudo apt-get install cowsay,execute o comando cowsay e algo que você queira falar. 
+-Agora faça a vaquinha dizer a frase que está gravada no arquivo fortune.txt;
+-Descubra os fatores primos usando o comando factor e em seguida o número 42 ;
+-Veja como fica a sua sorte do dia ao contrário. Dica: utilize o comando rev.
+-Execute o comando telnet towel.blinkenlights.nl e espere alguns segundos.
+
+*Nos Recursos Adicionais tem mais alguns comandos divertidos.
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
+

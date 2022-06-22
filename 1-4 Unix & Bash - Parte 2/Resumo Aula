@@ -1,0 +1,26 @@
+Unix & Bash - Parte 2
+
+Tratamento de inputs e outputs (entradas e saídas) no terminal.
+
+Entendendo um pouco sobre Processos e Arquivos no Unix:
+Processos - tudo que se faz no Unix e um processo ex: tarefas, comandos (O Unix interpreta como processo), esses processos possuem um PID (process identifier que contém - Usuário proprietário, Sessão do Shell, Estado atual, Linha de CMD utilizada, entre outros. (veja print - permissoes.png)
+
+Conhecer sobre permissões é uma habilidade importante para garantir que os arquivos manipulados na máquina (códigos, configurações, etc) não sejam alterados ou executados por pessoas indesejadas. 
+
+
+
+
+
+(fim da aula) (inicio exercícios)
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
