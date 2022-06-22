@@ -1,0 +1,37 @@
+Recapitulando
+
+(⚠️ Exercícios desta aula são uma breve recapitulação de alguns conceitos e, como são os fluxos iniciais de um trabalho com Git e GitHub)
+(Aula: Git & GitHub - Entendendo os comandos)
+
+-O Git é um sistema de versionamento distribuído (DVCS);
+-O GitHub é uma plataforma de hospedagem de código-fonte com controle de versão usando o Git;
+-Para iniciar um repositório local, há duas opções:
+-git init (para criar um novo repositório Git);
+-git clone (para copiar um repositório Git existente para máquina e, então poder criar branches e Pull Requests).
+
+-Criar um repositório do zero localmente na máquina, utilizará o comando git init;
+Fluxo 1 - git init:
+Criar o primeiro commit;
+Criar o repositório remoto na conta do GitHub;
+Adicionar a URL do repositório remoto;
+Executar push.
+
+-Trabalhar num repositório já existente, utilizará o comando git clone;
+Fluxo 2 - git clone:
+Criar a branch dentro do repositório clonado;
+Fazer checkout na branch;
+Criar o primeiro commit;
+Executar push.
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
+

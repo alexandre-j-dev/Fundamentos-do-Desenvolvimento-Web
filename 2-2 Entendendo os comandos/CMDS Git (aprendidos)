@@ -1,0 +1,174 @@
+ETAPAS
+
+INSTALAÇÃO--
+sudo apt-get install git-all
+v1. --------------
+git config --global user.name " " (insira o nome completo)
+git config --global user.email    (seuemail)
+    --------------
+v2.    
+git config user.name --global  "(insira o nome completo)"
+git config user.email --global "(seuemail)"   
+    
+git config user.name "(insira o nome completo)"
+git config user.email "(seuemail)"    
+    --------------
+git config --global core.editor "code --wait" (define o editor do .gitconfig como o VS Code)
+code .gitconfig (abrir o arquivo de configuração no VS Code)
+git config --list (checar o nome do usuário e email logados)
+    -------------
+CONECTANDO CHAVE SSH
+id_ed25519
+ssh-agent (REALIZA A COMUNICAÇÃO PARA SSH)
+ssh-add id_ed25519 (PORTEIRO - TEVE QUE USAR NO ARQUIVO NÃO PRIVADO .PUB)
+
+------------------------------------------------------------------------------
+
+PREPARANDO REPOSITÓRIO LOCAL E REMOTO
+1-git init (esse comando é responsável por iniciar um repositório Git dentro da pasta em que foi executado. A partir daqui o Git controla todas alterações que fizer na pasta.)
+
+----------------------------
+
+2-git remote add origin git@github.com:alexandre-j-dev/Trybe-Fundamentos.git (conectar os dois repositórios local e remoto)
+ -git remote -v (Verifique se tudo está certo com sua URL remota)
+ 
+----------------------------
+
+3 -git checkout -b nova-branch (criar e move pra nova branch)
+   git branch  (exibe todas branchs local)
+   git branch -a (exibe todas branchs local e remotas)
+   
+*No Git, uma branch é uma versão nova/separada do repositório principal.
+*Cada setor e responsável por uma branch
+
+3--git add . (para todos os arquivos) ou git add meu_arquivo.txt (nome do arquivo) 
+ 
+*Esse comando realiza a inclusão ou modificação do arquivo no diretório local, que são movidos para a área de teste (STAGE) onde ficará aguardando a inclusão pelo commit.
+*O comando git add mantém o histórico de todas as ações realizadas no código, permitindo que, se algum problema ocorrer na aplicação, o comando de desfazer alteração possa ser acionado.
+
+----------------------------
+
+4--git commit -m "" (importante mensagem sobre: tudo o que foi feito)
+*deve ser usado para gravar qualquer alterações no repositório local, em seguida o push para enviar.
+*Lembre-se de fazer commits pequenos e com mensagens bem descritivas a cada etapas do seu projeto ou a cada exercício resolvido.
+
+*ex commits -m
+
+Repo: Fundamentos (nome do modulo)
+
+README.md: Repositório de exercícios Módulo Fundamentos do Desenvolvimento Web Trybe - Turma 24A
+
+Ramos: main (nomes dos blocos)
+      'Bloco-01-Unix-&-Bash'  new-- (caso erro renomear no site GitHub)
+       Bloco-02-Git-GitHub-e-Internet
+
+Pastas: bl-aula (nomes das aulas)
+
+Commits:
+ new   Created. Git - Trybe Course, Add. README.md 
+       Created. Git - Trybe Course, Add. gitignore 
+  1-   Add. Exercícios Aula 03 - Unix & Bash    
+  1-   Add. Exercícios Aula 04 - Unix & Bash	
+  2-   Add. Exercícios Aula 01 - Git, GitHub e Internet 	
+       Updated. Alterações realizadas nos arquivos bebida.txt
+       
+----------------------------
+
+5 -git push -u origin main (para encurtar quando quiser da push nao precisa digitar tudo.)
+  --git push origin main (git push é usado para enviar o conteúdo do repositório local para um repositório remoto.)
+ --git push --force origin main(nome ramo)  
+
+------------------------------------------------------------------------------
+
+COMANDOS GIT
+
+BRANCHES
+--git checkout -b nova-branch (criar e move pra nova branch)
+--git branch -a (exibe todas branches local e remoto) 
+--git branch -D nomedabranch (deleta branch local)
+--git push origin nomedabranch --delete (deleta branch remota)
+--git branch -f main HEAD~3 (move a branch para commit, pode ser hash)
+
+----------------------------
+
+REMOVENDO ARQUIVOS GIT
+
+--git rm nomedoarquivo
+--git commit (apôs remoção)
+
+----------------------------
+
+IGNORANDO ARQUIVOS PELO GIT
+
+Crie o arquivo touch .gitignore
+Use cat para adicionar informações ao arquivo  cat > .gitignore (use >> para adicionar abaixo)
+*.txt (todos arquivos txt)
+nomedoarquivo.extensão (um arquivo)
+pasta/ (diretório inteiro)
+
+----------------------------
+
+RECUPERAR COMMITS ANTERIORES PELO GIT
+
+ REVERT (ideal remotamente - é o comando que usamos quando queremos pegar um commit anterior e defini-lo como um novo commit atual, mantendo o log intacto.)
+
+*CUIDADO ARQUIVOS TAGEADOS COMO GIT ADD, AO REVERTER PODEM SUMIR SE NAO HOUVER COPIA
+*APOS RESET OU REVERT ARQUIVOS VOLTARAM APARECER NOVAMENTE COMO NAO TAGEADOS COMO GIT ADD.
+
+--git log --oneline
+--git revert HEAD --no-edit (reverte um commit anterior)
+--git revert HEAD~x (x o numero de commits anteriores)
+ 81ed2bf..6a8e4e5
+*CUIDADO ARQUIVOS TAGEADOS COMO GIT ADD, AO REVERTER PODEM SUMIR SE NAO HOUVER COPIA
+*APOS RESET OU REVERT ARQUIVOS VOLTARAM APARECER NOVAMENTE COMO NAO TAGEADOS COMO GIT ADD.
+*MSM NAO EXIBINDO NO LOG, E POSSIVEL REVERTER O RESET SE SOUBER A HASH DOS COMITS DESEJADOS
+ RESET (ideal localmente - é o comando que usamos quando queremos mover o repositório de volta para um commit anterior, descartando qualquer alteração feita após esse commit.)
+9a71894   81ed2bf
+-- git log --oneline
+-- git reset commitid 
+
+POR CHECKOUT
+--git log (exibe commits realizados no git)
+--diff-filter=D (filtar por commits relacionados a delete)
+--summary  (resumo dos arquivos afetados pelo commit)
+--git checkout (hash~1) (move entre as branches e commits)
+ 
+----------------------------
+
+CORRIGINDO COMMITS COM AMEND
+ AMEND (é usado para modificar o commit mais recente.)
+ *Ele combina as alterações do STAGE (git add) e o commit mais recente, e refaz um novo commit.
+
+ --git commit --amend -m "Atualizar Mensagem"
+  --git commit nomedoarquivo -m 
+  
+----------------------------
+
+TRABALHANDO COM OUTROS REPOSITÓRIOS
+fork (cria uma copia no github, sem afetar o original)
+git clone (BAIXAR REPOSITÓRIO, copiar um repositório Git para uma pasta local, Cada versão de cada arquivo no histórico do projeto é obtida quando você roda o comando git clone.)
+*apos o clone deve upar novamente?
+criar changelog (se não houver)
+git remote rename origin upstream (renomear origin para upstream em caso de fork)
+git branch (exibe as branchs)
+git branch nome (criar a branch main, esta deve conter o nome das alterações/bug)
+git checkout -b branch-alteração (criar e move pra nova branch)
+*quando vc usa o checkout, alem de mover para branch o HEAD vai junto (HEAD aponta para onde novos commits darão sequencia)
+git push -u origin branch-alteração (envia para nova branch)
+git fetch (compara as versões local e remota)
+git pull  (buscar e baixar conteúdo de repositórios remotos e fazer a atualização imediata ao repositório local para que os conteúdos sejam iguais.)
+git merge nomedabranch (merge os ramos do projeto, deve se mover para que quer manter o nome primeiro)
+
+----------------------------
+
+RENOMEAR MASTER PARA MAIN
+   git branch -M main (criar a branch main) 
+   git branch -m BL01 BL01-Unix (renomear branch nome master para main, main e um termo mais atualizado)
+   
+----------------------------
+
+ERROS COMUNS E COMO RESOLVER
+error: src refspec main does not match any
+solução: *main não bate com nenhuma informação, solução criar main. 
+solução: *tentei deletar remoto não deu porque ela estava como ramo default. 
+

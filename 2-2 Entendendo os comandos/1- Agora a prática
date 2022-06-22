@@ -1,0 +1,37 @@
+Agora a prática
+
+(⚠️ Exercícios desta aula são apenas para treinar Pull Requests no Git e GitHub)
+(Aula: Git & GitHub - Entendendo os comandos)
+
+
+-Crie e inicialize um repositório Git e crie arquivo.txt e a branch main;
+-No arquivo .txt, adicione algumas habilidades  que serão desenvolvidas na Trybe:
+ . Unix
+ . Bash
+ . Git
+ . HTML
+ . CSS
+-Faça um git add;
+-Faça um git commit -m "Mensagem";
+-Faça um git push -u origin main;
+-Crie e mova a branch trybe-skills-changes;
+-Faça alguma alteração no arquivo.txt 
+-Faça um git add;
+-Faça um git commit -m "Mensagem";
+-Faça um git push -u origin trybe-skills-changes;
+-Abra um Pull Request com uma descrição detalhada:
+-Faça o merge das branches 
+
+
+
+
+-------
+Créditos
+
+Conteúdo: 
+https://www.betrybe.com/
+
+Repositório e Arquivos:
+https://www.linkedin.com/in/ale-js/
+https://github.com/alexandre-j-dev
+
