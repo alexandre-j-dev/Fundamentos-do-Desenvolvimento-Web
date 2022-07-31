@@ -1,0 +1,14 @@
+HOFs que são utilizadas com arrays.
+Essas funções são bastante poderosas, podendo facilitar muito a manipulação e criação de arrays
+resultando em um código mais legível, conciso e expressivo.
+
+Utilizar a função Array.forEach para iterar sobre todos os elementos de um array;
+Utilizar a função Array.find para encontrar o primeiro elemento de um array que satisfaça a uma condição;
+Utilizar as funções Array.some e Array.every para testar se os elementos de um array satisfazem a uma condição;
+Utilizar a função Array.sort para ordenar arrays de acordo com algum critério.
+
+Arrays são um dos tipos de dados mais importantes em qualquer linguagem, e com JavaScript não é diferente.
+
+Em qualquer programa não trivial, você terá que lidar com arrays de alguma forma, seja
+ processando a resposta de uma requisição a um servidor,
+ iterando sobre o resultado de uma consulta a um banco de dados para realizar uma operação sobre cada item.
